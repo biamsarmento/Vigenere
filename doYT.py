@@ -41,7 +41,7 @@ def decrypt(cipher, key):
     return decrypted
 
 # message= "I stay out too late, got nothing in my brain. That's what people say. Huhu. That's what people say. Huhu"
-# message="I'm Harry Potter! Hoje perdi 500 pontos para a grifinória..."
+message="I'm Harry Potter! Hoje perdi 500 pontos para a grifinória..."
 key = "Redes"
 encrypted_message = encrypt(message, key)
 decrypted_message = decrypt(encrypted_message, key)
