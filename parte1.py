@@ -124,50 +124,50 @@ def vigenere_decrypt(ciphertext, key):
 # Oh, yeah"""
 # chave = "TAYLORSWIFT"
 
-texto= """Forgive me Peter
-My lost fearless leader
-In closets like cedar
-Preserved from when we were just kids
-Is it something I did
-The goddess of timing
-Once found us beguiling
-She said she was trying
-Peter was she lying
-My ribs get the feeling she did
-And I didn't want to come down
-I thought it was just goodbye for now
-You said you were gonna grow up
-Then you were gonna come find me
-You said you were gonna grow up
-Then you were gonna come find me
-Said you were gonna grow up
-Then you were gonna come find me
-Words from the mouths of babes
-promises, oceans deep
-But never to keep
-Oh, never to keep
-Are you still a mind reader?
-A natural scene stealer
-I've heard great things Peter
-But life was always easier on you
-Than it was on me
-And sometimes it gets me
-When crossing your jet stream
-We both did the best we could do underneath the same moon
-In different galaxies
-And I didn't want to hang around
-We said it was just goodbye for now
-You said you were gonna grow up
-Then you were gonna come find me
-You said you were gonna grow up
-Then you were gonna come find me
-Said you were gonna grow up
-Then you were gonna come find me
-Words from the mouths of babes
-promises, oceans deep
-But never to keep
-Oh, never to keep"""
-chave = "PETER"
+# texto= """Forgive me Peter
+# My lost fearless leader
+# In closets like cedar
+# Preserved from when we were just kids
+# Is it something I did
+# The goddess of timing
+# Once found us beguiling
+# She said she was trying
+# Peter was she lying
+# My ribs get the feeling she did
+# And I didn't want to come down
+# I thought it was just goodbye for now
+# You said you were gonna grow up
+# Then you were gonna come find me
+# You said you were gonna grow up
+# Then you were gonna come find me
+# Said you were gonna grow up
+# Then you were gonna come find me
+# Words from the mouths of babes
+# promises, oceans deep
+# But never to keep
+# Oh, never to keep
+# Are you still a mind reader?
+# A natural scene stealer
+# I've heard great things Peter
+# But life was always easier on you
+# Than it was on me
+# And sometimes it gets me
+# When crossing your jet stream
+# We both did the best we could do underneath the same moon
+# In different galaxies
+# And I didn't want to hang around
+# We said it was just goodbye for now
+# You said you were gonna grow up
+# Then you were gonna come find me
+# You said you were gonna grow up
+# Then you were gonna come find me
+# Said you were gonna grow up
+# Then you were gonna come find me
+# Words from the mouths of babes
+# promises, oceans deep
+# But never to keep
+# Oh, never to keep"""
+# chave = "PETER"
 
 # texto = """Quando eu digo que deixei de te amar
 # É porque eu te amo
@@ -237,6 +237,38 @@ chave = "PETER"
 # You made a rebel of a careless man's careful daughter
 # You're the best thing, that's ever been mine"""
 # chave = "MINE"
+
+texto = """I hopped off the plane at LAX
+With a dream and my cardigan
+Welcome to the land of fame excess (woah)
+Am I gonna fit in?
+Jumped in the cab, here I am for the first time
+Look to my right, and I see the Hollywood sign
+This is all so crazy
+Everybody seems so famous
+My tummy's turnin' and I'm feelin' kinda homesick
+Too much pressure and I'm nervous
+That's when the taxi man turned on the radio
+And a Jay-Z song was on
+And a Jay-Z song was on
+And a Jay-Z song was on
+So I put my hands up
+They're playin' my song, the butterflies fly away
+I'm noddin' my head like, yeah
+Movin' my hips like, yeah
+I got my hands up, they're playin' my song
+They know I'm gonna be okay
+Yeah, it's a party in the U.S.A.
+Yeah, it's a party in the U.S.A.
+Get to the club in my taxi cab
+Everybody's looking at me now
+Like, "Who's that chick that's rockin' kicks?
+She gotta be from out of town"
+So hard with my girls not around me
+It's definitely not a Nashville party
+'Cause all I see are stilettos
+I guess I never got the memo"""
+chave ="HELENA"
 
 texto_sem_acentos = remove_acentos(texto)
 texto_encriptado = vigenere_encrypt(texto_sem_acentos, chave)

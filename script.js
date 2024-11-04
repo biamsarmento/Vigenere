@@ -4,7 +4,8 @@
 document.getElementById('btnCifrar').addEventListener('click', function() {
     const texto = document.getElementById('inputTexto').value;
     const chave = document.getElementById('inputChave').value;
-    const textoCifrado = vigenereEncrypt(texto, chave);
+    const semAcentos = removeAcentos(texto);
+    const textoCifrado = vigenereEncrypt(semAcentos, chave);
     document.getElementById('outputTexto').value = textoCifrado;
 });
 
@@ -52,8 +53,8 @@ function removeAcentos(texto) {
 
 // Função para criptografar usando a cifra de Vigenère
 function vigenereEncrypt(plaintext, key) {
-    plaintext = removeAcentos(plaintext).toUpperCase(); // Remove acentos e transforma em maiúsculas
-    key = removeAcentos(key).toUpperCase();
+    plaintext = plaintext.toUpperCase(); // Remove acentos e transforma em maiúsculas
+    key = key.toUpperCase();
 
     let ciphertext = [];
     let keyLength = key.length;
@@ -75,8 +76,8 @@ function vigenereEncrypt(plaintext, key) {
 
 // Função para descriptografar usando a cifra de Vigenère
 function vigenereDecrypt(ciphertext, key) {
-    ciphertext = removeAcentos(ciphertext).toUpperCase();
-    key = removeAcentos(key).toUpperCase();
+    ciphertext = ciphertext.toUpperCase();
+    key = key.toUpperCase();
 
     let plaintext = [];
     let keyLength = key.length;
@@ -156,13 +157,11 @@ const portugueseFrequencies = {
     const ic_english = 0.068;
     
     if (language == "portuguese") {
-        ic_chosen = ic_portuguese;
+      ic_chosen = ic_portuguese;
     }
     else {
-        ic_chosen = ic_english;
+      ic_chosen = ic_english;
     }
-
-    console.log(ic_chosen);
 
     let bestKeyLength = 1;
     let minDiff = Infinity;

@@ -198,32 +198,36 @@ ciphertext6 ="""j, z dhgu nixs vg zecn r xesbd
                 oou xvs xznu o tdcys
                 jw nus xflyr xrm rbezht
                 w'e nuabb sy asyk nb mpl"""
-ciphertext = """cimmw, j ahg'r nedx ytwnfnumhgq
-bfhnr xlr rmv wpbrdlxw wpyk amnikhmn
-fnm g ulbgi jx'l 'vyvwx hd ni
-uxruc, hgc umfx, g xel kgemg' hl nc ldyuiuhysh
-paco m itqtiw rmvv ahsti
-bm'q mmdx g dsnebo'x ukcbxax
-wpy axysh mac syfhpt jkhk jrxs
-wpy vtl'u fxegfzx t upvw lff wtrq nslm rjqxl
-zvx magt xbfc, jx ptq uvnx
-rii phptx magok mayu m xocs hbw
-ubw payu m wbb us rhs
-cym bd j nnlr tlhpce yi tr zsnk nbvmr
-upyew wpy attf qx?
-pmvpw rmv atgr ni?
-phsmh rhs uiee kf xh zm gyvd kzwxed?
-pv exye qx mm ulx zyshxg?
-go xax ebvwxl, xsneb zsn mpvwm fc
-jj b mmmh rhs jx ptq kylm y tyffcs xablh?
-m'f hlmc 17, b wmo'x dgmx egrrimg'
-usu m dgmx m fbqt chn
-zfxmr, g lrhp uiikx gu eee ufrm ppprz
-rmvv yttpvbmc tsgz ubw ieyzmg'
-yppq mac gek lgei hy rii zrk
-j atl lpaaxpf xh uc gsngb
-j ltmc ulx vppawl, wpy dgmx xatr
-qpnl, g tep rmv htgaf abmf imf"""
+ciphertext = """p lztcek sqj ghl tweae hx wek
+wpxs e qrlex ead tc needpklr
+jesgzqr tv xsi yauh zj sati pbpezw (hsnh)
+hq t kbnue qmg iu?
+nfqcek my xue jem, lrrl m lq soy xsi siywe xvml
+pzsx tv qj vvgox, lrq i zip xue oswplwvso wvgu
+xsmf iz ewp fo jvldl
+eciccookc dirmz wz jnmvyd
+ql tbqxc'f tbvyma' auh t'q selptr' xiuhl lbmlwtgx
+tvs xyph wvpwfuyi lrq i't rpviobw
+elnt'z asia toi eeki tey xhruio sa toi ceqiv
+eyh n jhc-k wbnn alw bn
+hro e waf-d dsag ded sa
+auh l nny-g wzrt whw zr
+fo p tfx zy oeyhf uw
+xsil'rl tweliu' qj wbnn, xsi ouaxpvslpid jyy halc
+v'm usohvn' tc sind smvi, lehl
+xsiiu' qj lvpz ptor, yles
+m toa qj lnnkw ft, ghlc'ci clhctr' zy zsyk
+ghlc vrbw p'q rsanh fp sxaf
+cpeu, ia'w l tnrac tr ghl y.d.e.
+lehl, tx'f a wecxl iu xsi h.s.h.
+kpx go alp gyui my ql thbt gnb
+lzpvlbvhj'w yovotrt aa qp rbw
+smvi, "jhv'w elnt jltgx toee'w eojotr' xijod?
+wue nsexn bl jcsz obx zj godr"
+ds uayh hmgh tc rmelz rzx nrvyyh ze
+px'd hrfprtxrlf rzx n nhwszvlsi aeetf
+'glyfe hpw m fel eci ftpppxgoz
+m ryrsz m yiiey kzx ghl qpqb"""
 
 ciphertext_clean = prepare_ciphertext(ciphertext)
 key_length = estimate_key_length(ciphertext_clean)
