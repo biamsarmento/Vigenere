@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="lock.ico" type="image/x-icon">
+    <title>Cifrador de Vigenère</title>
+    <link rel="stylesheet" href="normalize.css"> 
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="titles">
+            <h1 class="titlePage">Cifrador de Vigenère</h1>
+            <p class="subtitle">Por Beatriz e Gabriela</p>
+        </div>
+        
+        <!-- Parte 1 -->
+        <section class="parte">
+            <h2 class="parte-title">Parte 1: Cifrar e Decifrar Texto</h2>
+            
+            
+            <textarea class="parte-text-area1" id="inputTexto" rows="4" cols="50" placeholder="Insira o texto aqui"></textarea>
+
+            <div class="parte-centro">
+                <input class="parte-chave" type="text" id="inputChave" placeholder="Chave aqui "> 
+                <div class="parte-buttons">
+                    <button class="parte-button" id="btnCifrar">Cifrar</button>
+                    <button class="parte-button" id="btnDecifrar">Decifrar</button>
+                </div>
+            </div>
+            
+            <textarea class="parte-text-area2" id="outputTexto" rows="4" cols="50" placeholder="Resultado" readonly></textarea>
+
+            <button class="parte-button parte-button-clear" id="clearButton1">Limpar</button>
+        </section>
+        
+        <!-- Parte 2 -->
+        <section class="parte">
+            <h2 class="parte-title">Parte 2: Decifrar Texto Sem Chave</h2>
+            <!-- <label for="inputTextoCifrado">Texto Cifrado:</label> -->
+            <textarea class="parte-text-area1" id="inputTextoCifrado" rows="4" cols="50" placeholder="Texto cifrado aqui"></textarea>
+            
+            <div class="parte-centro">
+                <div class="parte-dropdown">
+                    <label class="parte-label" for="inputIdioma">Escolha o Idioma:</label>
+                    <select class="parte-select" id="inputIdioma">
+                        <option value="portuguese">Português</option>
+                        <option value="english">Inglês</option>
+                    </select>
+                </div>
+                <input class="parte-chave" type="text" id="outputChave" placeholder="Chave Descoberta" readonly>
+            </div>
+        
+            <textarea class="parte-text-area2" id="outputTextoDecifrado" rows="4" cols="50" readonly placeholder="Texto decifrado"></textarea>
+            
+            <button class="parte-button parte-button-descobrir" id="btnDescobrirChave">Descobrir Chave</button>
+
+            <button class="parte-button parte-button-clear" id="clearButton2">Limpar</button>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

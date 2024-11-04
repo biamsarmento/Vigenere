@@ -1,0 +1,161 @@
+.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    background-color: rgb(242, 232, 219);
+    /* min-height: 1200px; */
+    align-items: center;
+}
+
+.titlePage {
+    padding-top: 50px;
+    color: rgb(179, 158, 125);
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    text-shadow:  2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    align-items: center;
+    text-align: center;
+    color: rgb(69, 59, 47);
+    font-size: 20px;
+}
+
+.parte {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 15px;
+    padding: 0;
+    margin: 0 60px;
+    margin-bottom: 80px;
+    /* min-width: 1000px; */
+    align-items: center;
+    align-content: center;
+}
+
+.parte-title {
+    grid-column: 1;
+    grid-row: 1;
+    color: rgb(69, 59, 47);
+}
+
+.parte-chave {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    border: 0;
+    border-radius: 8px;
+    height: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.parte-chave:focus {
+    outline: none;
+    border: 2px solid rgb(179, 158, 125);
+}
+
+.parte-text-area1 {
+    resize: none;
+    grid-column: 1;
+    grid-row: 2;
+    width: 500px; /* Define a largura da caixa de texto */
+    height: 200px; /* Define a altura da caixa de texto */
+    padding: 10px; /* Adiciona espaço interno (padding) */
+    border: 1px solid #ccc; /* Define a borda da caixa de texto */
+    border-radius: 8px; /* Arredonda os cantos da caixa de texto */
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.parte-text-area2 {
+    resize: none;
+    grid-column: 3;
+    grid-row: 2;
+    width: 500px; /* Define a largura da caixa de texto */
+    height: 200px; /* Define a altura da caixa de texto */
+    padding: 10px; /* Adiciona espaço interno (padding) */
+    border: 1px solid #ccc; /* Define a borda da caixa de texto */
+    border-radius: 8px; /* Arredonda os cantos da caixa de texto */
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.parte-text-area1:focus,
+.parte-text-area2:focus {
+    outline: none;
+    border: 2px solid rgb(179, 158, 125);
+}
+
+
+.parte-centro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.parte-buttons {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.parte-button {
+    width: 80px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    background-color: rgb(179, 158, 125);
+    color: rgb(69, 59, 47);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.parte-button:hover {
+    opacity: 0.7;
+}
+
+.parte-button-clear {
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: end;
+}
+
+
+/* Parte 2 */
+
+.parte-dropdown {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.parte-button-descobrir {
+    grid-column: 2;
+    grid-row: 3;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.parte-select {
+    appearance: none;
+    width: 80px;
+    text-align: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 8px;
+    border-color: rgb(69, 59, 47);
+}
+
+.parte-label {
+    color: rgb(69, 59, 47);
+}

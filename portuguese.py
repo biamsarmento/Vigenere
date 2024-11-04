@@ -1,6 +1,5 @@
 import string
 from collections import Counter
-import unicodedata
 
 portuguese_frequencies = {
     'A': 14.63, 'B': 1.04, 'C': 3.88, 'D': 4.99, 'E': 12.57,
@@ -11,27 +10,7 @@ portuguese_frequencies = {
     'Z': 0.47
 }
 
-# def remove_accents(text):
-#     """Remove acentos do texto."""
-#     return ''.join(
-#         char for char in unicodedata.normalize('NFD', text)
-#         if unicodedata.category(char) != 'Mn'
-#     )
-
-def remove_accents(texto):
-    # Normaliza a string para decompor caracteres acentuados
-    texto_normalizado = unicodedata.normalize('NFD', texto)
-    # Filtra apenas os caracteres que não são de acentuação
-    texto_sem_acentos = ''.join(c for c in texto_normalizado if unicodedata.category(c) != 'Mn')
-    # print("Sem Acentos:",texto_sem_acentos)
-    
-    return texto_sem_acentos
-
 def prepare_ciphertext(text):
-    """Prepara o texto cifrado removendo acentos, espaços, pontuação e convertendo para maiúsculas."""
-    # text = remove_accents(text)
-    # print("Texto sem acentos",text)
-    # return clean_text
     return ''.join(char for char in text.upper() if char in string.ascii_uppercase)
 
 def calculate_index_of_coincidence(text):
@@ -128,71 +107,8 @@ def find_repetitive_pattern(key):
 
 
 ciphertext1 = """tpsja kexis ttgztpb wq ssmil tfdxf vsetw ytafrttw btzf pcbroxdzo zn tqac wix, bwfd s, je ahvup sd pcbqqxff lfzed d avu ytwoxavneh sg p aznst qaghv. sfiseic f udh zgaurr dxnm rcdentv btzf nllgubsetz, wymh qfndbhqgotopl qq asmactq m prftlk huusieymi ythfdz: t tdxavict i cjs vu yts edi grzivupavnex yy pikoc wirjbko, xtw gb rvffgxa pikoc, iedp elex t gmbdr fzb sgiff bpkga; p gvgfghm t ele z xwogwko qbgmgwr adlmy bozs rtpmchv e xtme ccmo. xhmetg, hup meyqsd czgxaj o jul fsdis, eaz t tah bf iymvaxhf, mll ra roso: objqgsecl kepxqrl pgxdt sjtp emhgc v o axrfphvunh. huic zseh, ijewiet tw pjoj hzkee so kacwi pt ida dxbfp-tvict ha bsj dp tkahhf dp 1869, ge yxbya mxpm rvrclke pt qrtfffu. iwehl nre hsjspgxm t elaeks mccj, rtcse t diodiiddg, vrl lsxiszrz, isehiza nxvop rv tcxdqchfs nhrfdg v ffb eodagayaepd of cpfmftfzo ahv acnv axbkah. cezp tquvcj! vpkhmss v qfx rmd vfugx gmghrs yxq mciecthw. mrfvsnx ugt qyogbe — btbvictzm jar csnzucvr mtnhm, ifzsex i odbjtlgxq, iof czgwfpbke p mea ifzsex, ugt zvvzn yy sohupeie uwvid we gahzml asdp o znexvopzrr plxm tbxeyasep wuett ra swjcfkwa fiv pchjqgwl a mxmdp rv mtglm rcma: — “ghw, cjs f czglqrsjtpl, qqjg jeyasdtg, mod isptwj dtsid rcdirh ugt o eaenvqoo gacxgq tgkac vlagoedz t tqgrr ickibpfrvpe hq ja uod feuh pvlzl gmgottpkie fiv tpf lacfrdz t lgboeiothq. tgke lk wabpiiz, xwfpg xoetw pd qvu, ljyqaoj nfoizh sjcfkee fiv czuvqb c rzfe gabc lm nkibt tlnpkia, iiuo tlwa t o uoc vvgp s da bni xws iot t rmiiiekt ee bozs tgxuboj eymvmcvrs; enha xgjo p nq ejpcixx pajjfr lh rahgf iwnwfgs wiytha.” qcd e qbix pazgz! gea, cof mp tvdtdvnoh hmh jznex ebdzzcpl ugt zye oxmjtw. v fzb eehwd qfx gttulet t gxpijuwt hah avud wmmh; tfi llwub ele xx izrodiyaiu eoia z nrpxgtogxvqs qfuymvk ss yaxeif, hsd ad âgwupg eex tw pjjzdll ha bcto akmzrwge, xtw bpijaoh i fgcgerh gabc hupf wq gskict xmgrv dz xwbthrcfes. fpfue p tfagfvctws. hxfrmxx md jars yhzq di uek iiehcrs, pgxdt scad mvqh gvnshvmh, aznst mdbo jambrm, rojaot gab c toekmy, p tzlst, — yy awiiz ws hpzv, — e... exrtpa ganbizrwr! dljyu p dfunh pttg uicxm cjsd ect e ftftetke etbyoct. gachvnexq-et rv sluid fiv edle mcceixt, eucrr qfx rmd drrpgxm, eouenxy ypwj dz jyq pg gacxrfpg. v vpkhmss, gaoxgqj arid. gea swxo bni et qrrabwet, bro obka fiv sp wiumojsp ksxpf gewh gtpc, toyoyxho. eex h qqj csieh idp qfidt exiodeymi pgodaebgm... ja jowmiugof qfx ijewia lhw etgjeyme q firtch ezdg, eaz iedtqv qfx vqjbr ex lm fdrfs zl ixtavnehw pt ida ekestrza. p wepd ele dbq, a fiv mpgse rcevtglm p sjsl tracwda pke meoieyme-xd. rv pp, t gmqstetke pp qrml, vsy dg flshw qhhlptwse, p pfcl xrfgsrbpkxm, p hiidmi etbyoct qma dfdtt gdtf ea xbrtp sottggmd."""
-ciphertext2 = """ne isuê iudsrv wm vju gi vsr pm nqgj
-dzsfik ve xiaies
-nãj vnm lw fvlgej uamialg
-hlvnb sm ssnuaxg so goakg vo yin
-ww noxê qhmkwr zu yejyo ouqs
-ngu krb qmfdj cbq ngcê heh fwe
-nzsfe fgsna rwljaya fó xwjá bzlnw hjadaf i usccormjss
-voahw g vzngs é tjina
-brvw nãj hnns iuzm cskka
-xoz e fgsna sidacddnhw
-nahof fjanyae e nadv, mry twm
-voahw g vzngs é tjina
-r s uém cgaes vw enteidss
-yo dyw s gzngi hjexife
-lgmvr hq tsnco qi uzuqa
-hq tsnco qi uzuqa
-nm, sa ad av, ea si vi, nm sa ad av ez
-si, vi nm sa, ad av ea, si vi nm sa ac
-av, ea si vi, nm sa ad, av ea si vi nl
-sa, ad av ea, si vi nm, sa ad av ea sh
-ne isuê iudsrv wm vju gi vsr pm nqgj
-dzsfik ve xiaies
-nãj vnm lw fvlgej uamialg
-hlvnb sm ssnuaxg so goakg vo yin
-ww noxê qhmkwr zu yejyo ouqs
-ngu krb qmfdj cbq ngcê heh fwe
-nzsfe fgsna rwljaya fó xwjá bzlnw hjadaf i usccormjss
-voahw g vzngs é tjina
-brvw nãj hnns iuzm cskka
-xoz e fgsna sidacddnhw
-nahof fjanyae e nadv, mry twm"""
 
-ciphertext3 = """ne isue iudsrv wm vju gi vsr pm nqgj
-dzsfik ve xiaies
-naj vnm lw fvlgej uamialg
-hlvnb sm ssnuaxg so goakg vo yin
-ww noxe qhmkwr zu yejyo ouqs
-ngu krb qmfdj cbq ngce heh fwe
-nzsfe fgsna rwljaya fo xwja bzlnw hjadaf i usccormjss
-voahw g vzngs e tjina
-brvw naj hnns iuzm cskka
-xoz e fgsna sidacddnhw
-nahof fjanyae e nadv, mry twm
-voahw g vzngs e tjina
-r s uem cgaes vw enteidss
-yo dyw s gzngi hjexife
-lgmvr hq tsnco qi uzuqa
-hq tsnco qi uzuqa
-nm, sa ad av, ea si vi, nm sa ad av ez
-si, vi nm sa, ad av ea, si vi nm sa ac
-av, ea si vi, nm sa ad, av ea si vi nl
-sa, ad av ea, si vi nm, sa ad av ea sh
-ne isue iudsrv wm vju gi vsr pm nqgj
-dzsfik ve xiaies
-naj vnm lw fvlgej uamialg
-hlvnb sm ssnuaxg so goakg vo yin
-ww noxe qhmkwr zu yejyo ouqs
-ngu krb qmfdj cbq ngce heh fwe
-nzsfe fgsna rwljaya fo xwja bzlnw hjadaf i usccormjss
-voahw g vzngs e tjina
-brvw naj hnns iuzm cskka
-xoz e fgsna sidacddnhw
-nahof fjanyae e nadv, mry twm"""
-
-ciphertext = """ne isuw qpifij wu qoh xw vam uz eegr
+ciphertext2 = """ne isuw qpifij wu qoh xw vam uz eegr
 yefwwk dz cvrwea
 iab zsa tz fnplsr xaemfzo
 klnrg gu vsfyflo vo ysfyo yo qms
@@ -223,6 +139,10 @@ nsfve j vrrlg e wrvws
 gnye aeg zaea dywe pjsfe
 ugm v nbwks fzlvgavaye
 ieegs wrvrvsr v vvhs, eep brq"""
+
+ciphertext = """yccw-gqeu; af, ufh ejkxs (fk swtdguvcv: uqlk rjan, ww, k nomcli) g ey fpkdveo bicjlkcna sn 1851 nhtq oeqsgwwt oehbbxvknqbtc kmtwmb ncodkvxs. om oqxba, wtfpigv zospd i deeqb meagcewwy gm crmp, dysqvka rp lddky nomchqty bsrsrl, ryd apzb lkmw, c hgjipdq qbakinyfs cpdvey cif, ld dkkssn yqbgbucs br vcfuc, bpuipmmfb ndzvo po qcuvc na qbnlbcy[1]. gab arvvbupvgfiq zmfb y oqvodousui fy "dsoyvkkwqbum dugbuqblr", uqlk rjan zgmqpfs fzkduqbq pqudmg f drq ww rfbadauy ocncukkkx, qicjipna o oyr agb zsn kdqu sydscvaq xa apkhvvy po nmubg na ovrrz, gw 1891. eib phxwdmqbm fwoy ga "hpdvfo dcnyqkg kyssgfipy" rcj cvbclqzfallc kbsoyv vq cqqvjr fz, kbct m fmpdqbbplw fy zotalugxfc em dcvyd. kjjoqcw rovjnvgb pwtqh ywo sctrdzkk ps ucu mumdwum r tkfdc fjh ugcyc[2], f b. k. tcgdsoah w ermaps gm "ww pct kdqu oehsyqpqc q abgv ucbmjjjkwuye zjtuwu na avlgw"[pyfo 1] f "m pikyd zjtuw okdwugpw lk qgdplbq"[xahb 2][3][4]. qxi hbmgf bh idodhvpd, "kcvx af gvpokqz"[omwi 3], gcfo flwzg ke abgv ncwagbq gi nsfssywctk yioblin.
+
+wqzwgotg maafarc c oeqscymt wapz blkm oy tfthzgsdc ec 1850 h bgbywomx 18 ugcqg ecswkc, ga blr i okug em tcg rmjjy szgfugum. pmnfuzmc eiuoai-tc hu uem synhzkozqjy fwoy yosgqpgsdc dmpco nq 1841 o 1844, jlftwszrp tdzkye oomv mo lmzfclzqc q sn ypxnk xsjrxzc xm zjrhzcdgfb zdtgoufb. y einouo cpdvek q apbhtcnm bb lrbqbuoncqbg nutjalt fo ooqrxzcb nomcli cvnwoy pwerm rjan[5], m q pubbj gw nshfp c eiuomrp lr vcerfbelw fy nomchqty qgtca mo 1820. ke rfqfzkmast bhbcvtoeyv m tomzjqwiu nm qbad i dkxsjy h lc ojhsyfiq nq cmcr lg lmzfgd, jgw ocnm fwoy m jjbd i dydrp bh co xmjjm hvvbq iny wzkzgzbadw eexhvpdtoozhf bldgbewggfifk, eop klavedoemv kqw m synowtkoop bh knkegf c vbcdgg tmfqcv, nsn c pin, o m sygvbgxowb bh lgee. ot gqnneqbdgda nsfssyuqcc pc mgyzq szqmshu urmyfqsmcbq[6] s b zljnsm."""
 
 # ciphertext_no_accents = remove_accents(ciphertext)
 ciphertext_clean = prepare_ciphertext(ciphertext)

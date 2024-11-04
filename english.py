@@ -198,87 +198,32 @@ ciphertext6 ="""j, z dhgu nixs vg zecn r xesbd
                 oou xvs xznu o tdcys
                 jw nus xflyr xrm rbezht
                 w'e nuabb sy asyk nb mpl"""
-ciphertext7 = """yleip'w kgritytr' tgzx typ asq
-yle jevwwy pofvw ozjr ik'd nmky vazyiv
-lmirv'd e ydta owq xzw uevvxifl
-dsu nlpc ej xo ksi usw
-enu jsm cssw z hefff esb jsm lt haeni jallt ksijw
-nr typ qavipe fq xzw uerbtry dtx
-yvll
-gz, diay
-hi'jw ivimtr' vgbr typ vgsi
-m wfyhwj nj yff ofgb
-m'm kccaf' xs hrch fgy xo xpx uszkhk ft fgb
-fuk jsm'jj nuje wg utsl
-ifr qgzv hryhk lmvolrl qgzv hrtv
-stxink xmfvjhlp xecas' qe nlrl qty
-aeo m vgs'x keza zgb mt xpxk tjxtvc xzss xhzd
-cgm yekv xc zssh aeo hjsl qe ypev xnvsk
-qisjqisj
-lrv a isn'k vrgo bly
-sfx oayl yff m'v vfrcv tr s kysrd
-tr eq gisk ovwkx
-jercpwkx
-wo slfq vwmvv dpgo
-'yml np vmf tyt fq vgsi mn ksmk gsi hfcww ltan
-z hefff wtrj vaymx hvci af ylij aekkjrgvc wwsy
-col ayl qtyr vjik gs qe
-zy xzax qodprl fta craxmjj mt, ipqwegir ze
-'gsmxi i uzr'l cssw yza al litj milljv tylr lznw
-yff xscj qy ylrv ssh dilk ew miau qmjky
-jercpwkx
-enu t hgf'y onfh azq
-gyt ntxz qty i'u oefuj mn r dxgjr
-mn dj fwky hrvdw
-xwfvlvdw
-gz, tl
-wvwp qgz wtfzh lzjve ntxz ej mn ksi vgtvwrj
-qq zfrdj dlscj
-m'm ezx mkzelcj xzax aap myl
-qty plwp ew nr aeo m'e s qmtkwi egwi bilzw
-ay'w typ jajxx kzdw, al'x jlrhpwkx, verwpq ktqeksmfy, nx's wpejdjws
-fs, cwsm"""
-
-ciphertext = """mhccs'j kkujmail' mcll ppj pty
-rss jlnmjm eomvg nzav nm'l jsdh isevjw
-mhccs'j s cttp hfd evv hwdjfxnr
-jcl owtp fx tm evv uwz
-fgw ymf yegs q btgny lgb qkc yh walns iacpy maepp
-we ldm rbwdjp cw ldm utkkgyu cgp
-gjta
-of, jsrz
-sm'wx wrggwe' vkes mae pzou
-a swswxr gq mfm gvtp
-b'm rcmzf' ow mtkd lzh kg cmy vtuesh lh jwb
-unt wzi'iw fcxm lo azcc
-jqv dhnr flbuk ppwhngf jclj dink
-tbqpbk eevixwlw xobaj' uj ptnr jcl
-sjl n whn'r vbfo dwb bm gceg swpbjk mhyy hyao
-gtn maip ap zwvi tgd bcox ea pjtw fgcgk
-xaiwexsq
-lbu a zws'm dnmh kyq
-xcy pbtf jcl a'z lfgve gy o jlkzr
-bg mw msjl zzjll
-fclfcwoa
-xh uazj riarm xehw
-'rtz nw ncs hnt mq ffsz qs maiq zbv zkzxx mouy
-w nsjvf lmaw cwxzp pjkx il evzk lixlxnepf jwwb
-dhn pse mfmn mdxl ol xs
-zf ppnl fokpbk fke htitscs zl, nmrxfbcc wk
-'uwcxx b dmy'h bfke mhp ir rskk xmymxr rsoe ldqx
-rhu rlyv eu pfgw alo risc uj axab qwikp
-njtklcdg
-rfz q ihg't iycn odg
-gnm wgev pgq q'i wtnap we s obtkf
-il xm swob ikxsq
-qsrjhmxl
-hh, ms
-kvdh gtn ltmzr kzazj pbtf xs zf ppj whophop
-eu pfgws qsobw
-e'u shm uqfocdu bmbl wyj pll
-uwz inlj xs zf wvi b'f a jthkda utkx bpljv
-ap'a yax fgcgk ceax, bm's dwondaax, kxajwm jgimyabne, th'j xaiwexsq
-zv, pwwp"""
+ciphertext = """cimmw, j ahg'r nedx ytwnfnumhgq
+bfhnr xlr rmv wpbrdlxw wpyk amnikhmn
+fnm g ulbgi jx'l 'vyvwx hd ni
+uxruc, hgc umfx, g xel kgemg' hl nc ldyuiuhysh
+paco m itqtiw rmvv ahsti
+bm'q mmdx g dsnebo'x ukcbxax
+wpy axysh mac syfhpt jkhk jrxs
+wpy vtl'u fxegfzx t upvw lff wtrq nslm rjqxl
+zvx magt xbfc, jx ptq uvnx
+rii phptx magok mayu m xocs hbw
+ubw payu m wbb us rhs
+cym bd j nnlr tlhpce yi tr zsnk nbvmr
+upyew wpy attf qx?
+pmvpw rmv atgr ni?
+phsmh rhs uiee kf xh zm gyvd kzwxed?
+pv exye qx mm ulx zyshxg?
+go xax ebvwxl, xsneb zsn mpvwm fc
+jj b mmmh rhs jx ptq kylm y tyffcs xablh?
+m'f hlmc 17, b wmo'x dgmx egrrimg'
+usu m dgmx m fbqt chn
+zfxmr, g lrhp uiikx gu eee ufrm ppprz
+rmvv yttpvbmc tsgz ubw ieyzmg'
+yppq mac gek lgei hy rii zrk
+j atl lpaaxpf xh uc gsngb
+j ltmc ulx vppawl, wpy dgmx xatr
+qpnl, g tep rmv htgaf abmf imf"""
 
 ciphertext_clean = prepare_ciphertext(ciphertext)
 key_length = estimate_key_length(ciphertext_clean)
