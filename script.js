@@ -24,7 +24,7 @@ document.getElementById('btnDescobrirChave').addEventListener('click', function(
     const keyLength = estimateKeyLength(cleanText, idioma);
     const initialKey = findKey(cleanText, keyLength, idioma);
     const chaveDescoberta = findRepetitivePattern(initialKey);
-    const textoDecifrado = vigenereDecrypt(textoCifrado, chaveDescoberta);
+    const textoDecifrado = decryptWithKey(textoCifrado, chaveDescoberta);
     document.getElementById('outputTextoDecifrado').value = textoDecifrado;
     document.getElementById('outputChave').value = chaveDescoberta;
 
