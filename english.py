@@ -15,7 +15,7 @@ english_frequencies = {
 def prepare_ciphertext(text):
     return ''.join(char for char in text.upper() if char in string.ascii_uppercase)
 
-    # Calcula o Índice de Coincidência (IC) para um texto.
+# Calcula o Índice de Coincidência (IC) para um texto.
 def calculate_index_of_coincidence(text):
     n = len(text)
     frequencies = Counter(text)
@@ -198,12 +198,14 @@ ciphertext5 ="""j, z dhgu nixs vg zecn r xesbd
                 jw nus xflyr xrm rbezht
                 w'e nuabb sy asyk nb mpl"""
 
-ciphertext_clean = prepare_ciphertext(ciphertext1)
+CIPHERTEXT = ciphertext1
+
+ciphertext_clean = prepare_ciphertext(CIPHERTEXT)
 key_length = estimate_key_length(ciphertext_clean)
 initial_key = find_key(ciphertext_clean, key_length)
 key = find_repetitive_pattern(initial_key)
 print("Chave encontrada:", key)
 
 # Decifra o texto cifrado usando a chave encontrada e mantendo pontuações
-plaintext = decrypt_with_key(ciphertext1, key)
+plaintext = decrypt_with_key(CIPHERTEXT, key)
 print("Texto decifrado:", plaintext)
