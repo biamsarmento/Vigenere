@@ -1,7 +1,6 @@
 # Vigenere
 Trabalho de Segurança de Redes - Beatriz Mingorance Sarmento e Gabriela de Sousa Peres
 
-Site para testar frases novas: https://www.cs.du.edu/~snarayan/crypt/vigenere.html
+Cifrador (e Decifrador) de Viginere. 
 
-
-worksForFiveLettersKey -> keyFinder2 -> teste -> teste2 -> teste2port
+Link para o site: https://biamsarmento.github.io/Vigenere/
