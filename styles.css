@@ -4,6 +4,7 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
     gap: 15px;
     background-color: rgb(242, 232, 219);
     /* min-height: 1200px; */
